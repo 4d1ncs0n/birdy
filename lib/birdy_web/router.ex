@@ -19,6 +19,7 @@ defmodule BirdyWeb.Router do
     get "/", PageController, :index
     get "/signup", PageController, :signup
     get "/login", PageController, :login
+    post "/signup", PageController, :create_user
   end
 
   # Other scopes may use custom stacks.
